@@ -1,0 +1,85 @@
+/* ---------- GLOBAL RESET ---------- */
+a.nav-link {
+  display: inline-block;
+  position: relative;
+  color: black;
+  opacity: 0.85;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+/* ---------- HOVER EFFECT ---------- */
+a.nav-link:hover {
+  opacity: 1;
+  color: black;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  transform: translateY(-2px);
+}
+
+/* ---------- ACTIVE LINK ---------- */
+a.nav-link.active {
+  color: blue; /* cyan-blue accent */
+  background: rgba(14, 165, 233, 0.15);
+  border: 1px solid rgba(14, 165, 233, 0.4);
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.3);
+}
+
+/* ---------- NAV LINK STYLE ---------- */
+.nav-link {
+  border-radius: 12px;
+  margin: 0 4px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ---------- BRAND LOGO ---------- */
+.navbar-brand {
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  border: none;
+  border-radius: 50%;
+  padding: 10px 16px;
+  color: #fff !important;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.5);
+}
+
+/* ---------- NAVBAR BACKGROUND ---------- */
+.navbar {
+  background: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1.5rem;
+  transition: background 0.5s ease;
+}
+
+/* ---------- HELLO USER TEXT ---------- */
+.navbar span {
+  color: #a5b4fc; /* soft indigo tone */
+  font-weight: 500;
+  font-style: italic;
+  margin-left: 1rem;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  a.nav-link {
+    display: block;
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  .navbar-brand {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,126 @@
+.car-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.car-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ========== Image Section ========== */
+.car-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.car-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.car-card:hover .car-card-image img {
+  transform: scale(1.08);
+}
+
+/* ========== Content Section ========== */
+.car-card-content {
+  padding: 20px 22px 26px;
+}
+
+.car-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+/* ========== Table ========== */
+.car-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+}
+
+.car-details-table th {
+  text-align: left;
+  color: #a5b4fc;
+  font-weight: 500;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+}
+
+.car-details-table td {
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  color: #f1f5f9;
+}
+
+/* ========== Buttons ========== */
+.car-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+.details-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.details-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.reserve-btn {
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  color: #fff;
+}
+
+.reserve-btn:hover {
+  background: linear-gradient(135deg, #6366f1, #3b82f6);
+}
+
+.edit-btn {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #111;
+}
+
+.edit-btn:hover {
+  background: linear-gradient(135deg, #f59e0b, #fbbf24);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+}
